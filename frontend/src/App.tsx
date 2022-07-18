@@ -1,10 +1,16 @@
-import Botoesnotificacao from "./componentes/Botoesnotificacao"
-
+import Header from "./componentes/Header"
+import Salescard from "./componentes/Salescard"
 function App() {
-  return(
+  return (
     <>
-      <h1>Olá Mundo!</h1>
-      <Botoesnotificacao />
+      <Header />
+      <main>
+        <section id="produtos">
+          <div className="gen-card-container">
+            <Salescard />
+          </div>
+        </section>
+      </main>
     </>
 
   )
